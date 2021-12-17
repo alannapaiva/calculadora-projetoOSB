@@ -13,9 +13,9 @@ function App() {
 
   return (
     <div className="App">
-      {process.env.REACT_APP_TITLE}
+      
       <header className="App-header">
-        <h1>Calculadora</h1>
+        <h1>{process.env.REACT_APP_TITLE}</h1>
         <div className='App-input'> 
           <input onChange={(e)=> setNum1(Number(e.target.value))} type="number" id="value01" name="value01"/>
           <input onChange={(e)=> setNum2(Number(e.target.value))} type="number" id="value02" name="value02"/>
