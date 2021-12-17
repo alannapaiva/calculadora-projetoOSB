@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      {process.env.REACT_APP_TITLE}
       <header className="App-header">
         <h1>Calculadora</h1>
         <div className='App-input'> 
